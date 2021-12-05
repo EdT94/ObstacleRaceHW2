@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="9dp"
+    android:elevation="9dp"
+    android:layout_margin="20dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/records_LBL_Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="User Name"
+            android:textSize="15sp" />
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/records_LBL_Score"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/records_LBL_Name"
+            android:layout_alignStart="@id/records_LBL_Name"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:maxLines="1"
+            android:minLines="1"
+            android:text="User Score"
+            android:textSize="12sp" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/records_LBL_distance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/records_LBL_Score"
+            android:layout_alignStart="@id/records_LBL_Name"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="8dp"
+            android:maxLines="1"
+            android:text="Distance"
+            android:textSize="12sp" />
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/records_LBL_longitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/records_LBL_distance"
+            android:layout_alignStart="@id/records_LBL_Name"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="8dp"
+            android:maxLines="1"
+            android:text="longitude"
+            android:textSize="12sp" />
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/records_LBL_latittude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/records_LBL_longitude"
+            android:layout_alignStart="@id/records_LBL_Name"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="8dp"
+            android:maxLines="1"
+            android:text="latitude"
+            android:textSize="12sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/records_BTN_location"
+            style="@style/Widget.MaterialComponents.Button.Icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignEnd="@+id/records_LBL_Name"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="45dp"
+            android:layout_marginEnd="18dp"
+            android:padding="0dp"
+            app:backgroundTint="@color/my_red"
+            app:icon="@drawable/location"
+            app:iconGravity="textStart"
+            app:iconPadding="0dp"
+
+            />
+
+
+    </RelativeLayout>
+</com.google.android.material.card.MaterialCardView>
